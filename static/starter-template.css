@@ -1,0 +1,16 @@
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+}
+.container1{
+  background-image: url(https://media.istockphoto.com/photos/watercolor-painting-on-watercolor-paper-with-pastel-green-and-coral-picture-id1253943476?b=1&k=20&m=1253943476&s=170667a&w=0&h=iyj9khy1jmsNleHtf2y4JR53gb8cBfc-O7PuYSZBNes=);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+}
