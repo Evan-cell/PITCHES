@@ -6,7 +6,7 @@ pitcher App
 
 {% block styles %}
 {{super()}}
-<link rel="stylesheet" href="{{url_for('.static', filename='starter-template.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='starter-template.css')}}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -27,8 +27,8 @@ pitcher App
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             
-            <li><a href="{{ url_for('login') }}">Login</a></li>
-            <li><a href="{{ url_for('signup') }}">Sign Up</a></li>
+            <li><a href="{{ url_for('auth.login') }}">Login</a></li>
+            <li><a href="{{ url_for('auth.signup') }}">Sign Up</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -40,8 +40,19 @@ pitcher App
         <h1>Welcome to the Pithches site</h1>
         <p class="lead">To view pitches Login to your account<br> If you have no account you can sign up to create an account</p>
       </div>
-
+      <footer>
+        <div class="container2">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>
+                        Copyright © 2021. Made with ❤️ by <a target="_blank" href="https://devkm-portfolio.netlify.app/">Dev KIM</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
     </div>
+    
     <!-- /.container -->
     
 {% endblock %}
