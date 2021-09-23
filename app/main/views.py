@@ -8,5 +8,5 @@ def index():
 
 
 @main.route('/pitches')
-def dashboard():
+def pitches():
     return render_template('pitches.html')
