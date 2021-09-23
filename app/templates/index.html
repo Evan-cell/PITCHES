@@ -10,6 +10,11 @@ pitcher App
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
 {% endblock %}
 
 {% block content %}
@@ -43,17 +48,101 @@ pitcher App
         <p class="lead">To view pitches Login to your account<br> If you have no account you can sign up to create an account</p>
       </div>
       
-      <footer>
-        <div class="container2">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <p>
-                        Copyright © 2021. Made with ❤️ by <a target="_blank" href="https://devkm-portfolio.netlify.app/">Dev KIM</a>
-                    </p>
-                </div>
+      <div class="container">
+        <div class="card">
+        <div class="row">
+          <div class="col l4 s12 m6">
+            <div class="card">
+              <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+                <span class="card-title">Martin Fowler</span>
+                <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons ">add</i></a>
+              </div>
+              <div class="card-content">
+                <p>“Any fool can write code that a computer can understand. Good programmers write code that humans can understand.”</p>
+                <br>
+                <a class="waves-effect waves-light btn " href="{{ url_for('auth.signup') }}">Readmore</a>
+              </div>
             </div>
+          </div>
+          <div class="col l4 s12 m6">
+            <div class="card">
+              <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1605379399642-870262d3d051?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60">
+                <span class="card-title"> John Johnson</span>
+                <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+              </div>
+              <div class="card-content">
+                <p>“First, solve the problem. Then, write the code.”</p>
+                <br>
+                <a class="waves-effect waves-light btn" href="{{ url_for('auth.signup') }}">Readmore</a>
+              </div>
+            </div>
+          </div>
+          <div class="col l4 s12 m6">
+            <div class="card">
+              <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60">
+                <span class="card-title">Oscar Wilde</span>
+                <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+              </div>
+              <div class="card-content">
+                <p>“Experience is the name everyone gives to their mistakes.”</p>
+                <br>
+                <a class="waves-effect waves-light btn" href="{{ url_for('auth.signup') }}">Readmore</a>
+              </div>
+            </div>
+          </div>
+          <div class="col l4 s12 m6">
+            <div class="card">
+              <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGNvZGluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60">
+                <span class="card-title">Dan Salomon</span>
+                <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+              </div>
+              <div class="card-content">
+                <p>“Sometimes it pays to stay in bed on Monday, rather than spending the rest of the week debugging Monday’s code.” </p>
+                <br>
+                <a class="waves-effect waves-light btn" href="{{ url_for('auth.signup') }}">Readmore</a>
+              </div>
+            </div>
+          </div>
+          <div class="col l4 s12 m6">
+            <div class="card">
+              <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1617471346061-5d329ab9c574?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTQ0fHxjb2Rpbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+                <span class="card-title">Antoine de Saint-Exupery</span>
+                <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+              </div>
+              <div class="card-content">
+                <p>“Perfection is achieved not when there is nothing more to add, but rather when there is nothing more to take away.” </p>
+              <br>
+              <a class="waves-effect waves-light btn" href="{{ url_for('auth.signup') }}">Readmore</a>
+              </div>
+            </div>
+          </div>
+          <div class="col l4 s12 m6">
+            <div class="card">
+              <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1521185496955-15097b20c5fe?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHByb2dyYW1taW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60">
+                <span class="card-title"> Kent Beck</span>
+                <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+              </div>
+              <div class="card-content">
+                <p>“Optimism is an occupational hazard of programming: feedback is the treatment. “</p>
+                <br>
+                <a class="waves-effect waves-light btn" href="{{ url_for('auth.signup') }}">Readmore</a>
+              </div>
+            </div>
+          </div>
         </div>
-    </footer>
+                  
+      </div>
+    </div>
+      
+    </div>
+      <br><br><br><br>
+      
     </div>
     
     <!-- /.container -->
