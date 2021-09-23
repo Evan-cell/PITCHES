@@ -1,6 +1,6 @@
 from flask import render_template,redirect,url_for,request,flash
 from .forms import LoginForm,RegisterForm
-from flask_login import login_user
+from flask_login import login_user,logout_user,login_required
 from . import auth
 from .. import db
 from ..models import User
@@ -19,6 +19,11 @@ def login():
     
         
     return render_template('login.html', form=form)
+@auth.route('/logout')
+@login_required
+def logout():
+    logout_user()
+    return redirect(url_for("main.index"))
 
 @auth.route('/signup',methods=['GET','POST'])
 def signup():
