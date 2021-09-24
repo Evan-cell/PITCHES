@@ -28,7 +28,7 @@ class ProdConfig(Config):
   Args: 
       Config: The parent configuration class with General configuration settings
   '''
-  SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
+  SQLALCHEMY_DATABASE_URI = 'postgresql://ajfrkcvrvgwhpp:d7b2dfa61f57de50398389e166e9cac28d53e8ced7a0173c1c4baf942cdf0797@ec2-52-45-238-24.compute-1.amazonaws.com:5432/dfpb29pernlhum'
 
 class TestConfig(Config): 
  pass
